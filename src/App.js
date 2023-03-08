@@ -5,6 +5,8 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import Cart from "./components/Cart/Cart";
 import CartContextProvider from "./context/CartContext";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path="/itemDetail/:id" element={ <ItemDetailContainer /> } />
 
         <Route path="/cart" element={ <Cart /> } />
+        <Route path="/login" element={ <Login />} />
+        <Route path="/sign-up" element={ <Register /> } />
 
         <Route path="*" element={ <h1>404 Not Found</h1> } />
         
